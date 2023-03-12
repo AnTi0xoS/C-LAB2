@@ -8,12 +8,12 @@ int main()
 	std::cin >> allPagesSize;
 	std::vector<std::string> allPages;
 	std::string currentAction;
-		getline(std::cin, currentAction);
-		if (currentAction.rfind("Run", 0) == 0)
-		{
-			allPages.push_back(currentAction.substr(4, currentAction.size()));
-			currentPageIndex = allPages.size() - 1;
-		}
+	getline(std::cin, currentAction);
+	if (currentAction.rfind("Run", 0) == 0)
+	{
+		allPages.push_back(currentAction.substr(4, currentAction.size()));
+		currentPageIndex = allPages.size() - 1;
+	}
 	for (int i = 0; i < allPagesSize; i++)
 	{
 		std::string currentAction;
@@ -30,4 +30,5 @@ int main()
 		}
 		std::cout << allPages[currentPageIndex] << std::endl;
 	}
+	return 0;
 }
