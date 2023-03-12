@@ -33,4 +33,6 @@ int main()
 	}
 	if (bracketsStack.empty()) std::cout << "yes";
 	else std::cout << "no";
+	
+	return 0;
 };
